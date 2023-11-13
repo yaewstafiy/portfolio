@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <title>App Shop</title>
+  <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <a class="header__top-logo" href="#">
+            <img src="images/logo.svg" alt="">
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#info">
+                  Info
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#product">
+                  Product
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#contacts">
+                  Contacts
+                </a>
+              </li>
+              <li class="menu__item menu__item-btn">
+                <button class="menu__button btn">BUY</button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__content">
+          <img class="content-item color--blue content-item--active" src="images/header-blue.webp" alt="blue headset">
+          <img class="content-item color--white" src="images/header-white.webp" alt="white headset">
+          <img class="content-item color--pink" src="images/header-pink.webp" alt="pink headset">
+          <img class="content-item color--green" src="images/header-green.webp" alt="green headset">
+          <img class="content-item color--black" src="images/header-black.webp" alt="black headset">
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="choose">
+        <div class="container">
+          <h1 class="choose__title need-to-animate">
+            Choose your colour
+          </h1>
+          <p class="choose__subtitle need-to-animate">
+            The perfect balance between the purityof hi-fi and the magic of AirPods.
+            The ultimate personal audio experience.
+          </p>
+          <div class="choose__cards">
+            <button class="choose__item" data-button="color--green">
+              <img src="images/headset-green-mini.webp" alt="green headset">
+            </button>
+            <button class="choose__item" data-button="color--white">
+              <img src="images/headset-white-mini.webp" alt="white headset">
+            </button>
+            <button class="choose__item" data-button="color--pink">
+              <img src="images/headset-pink-mini.webp" alt="pink headset">
+            </button>
+            <button class="choose__item" data-button="color--black">
+              <img src="images/headset-black-mini.webp" alt="black headset">
+            </button>
+            <button class="choose__item choose__item--active" data-button="color--blue">
+              <img src="images/headset-blue-mini.webp" alt="black headset">
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <div class="composition" id="info">
+        <div class="container">
+          <h1 class="main__title need-to-animate">
+            An extremely original composition.
+          </h1>
+          <p class="main__subtitle need-to-animate">
+            Introducing the reinvention of over-the-ear headphones. From the cushion to the headband, the AirPods Max
+            are designed with acoustic insulation in mind, adapted to many head shapes, so you can immerse yourself in
+            the purity of sound.
+          </p>
+          <div class="composition__inner">
+            <div class="composition__text need-to-animate">
+              <p>The headband is made of breathable mesh, distributing the weight to reduce pressure on the head.</p>
+              <p>The stainless steel structure is wrapped in a soft-touch material to provide a remarkable harmony
+                between resistance, flexibility and comfort.</p>
+              <p>The telescoping arms expand and stay in any position you want, allowing you to maintain fit and
+                isolation.</p>
+            </div>
+            <div class="composition__image need-to-animate">
+              <img class="content-item content-item--active color--blue" src="images/headset-blue-composition.webp"
+                alt="">
+              <img class="content-item color--pink" src="images/headset-pink-composition.webp" alt="">
+              <img class="content-item color--green" src="images/headset-green-composition.webp" alt="">
+              <img class="content-item color--black" src="images/headset-black-composition.webp" alt="">
+              <img class="content-item color--white" src="images/headset-white-composition.webp" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="promo" id="product">
+        <div class="container">
+          <h1 class="main__title need-to-animate">
+            It even preserves the battery.
+          </h1>
+          <p class="main__subtitle need-to-animate">
+            When stored in the sleek and lightweight Smart Case , AirPods Max enter a low-power state to save energy.
+          </p>
+          <img class="content-item color--blue content-item--active need-to-animate" src="images/blue-case.webp" alt="">
+          <img class="content-item color--green need-to-animate" src="images/green-case.webp" alt="">
+          <img class="content-item color--pink need-to-animate" src="images/pink-case.webp" alt="">
+          <img class="content-item color--white need-to-animate" src="images/white-case.webp" alt="">
+          <img class="content-item color--black need-to-animate" src="images/black-case.webp" alt="">
+          <h1 class="main__title promo__title need-to-animate">
+            Stayin' alive, stayin' alive.
+          </h1>
+          <div class="promo__number need-to-animate">
+            20
+          </div>
+          <p class="main__subtitle promo__subtitle need-to-animate">
+            hours of music, movies and calls with Active Noise Cancellation and Custom Spatial Audio turned on. 5 And
+            just 5 minutes of charging via the Lightning connector gives you an hour and a half of sound. 6
+          </p>
+        </div>
+      </section>
+
+      <section class="audio">
+        <div class="container">
+          <div class="audio__inner">
+            <div class="audio__box need-to-animate">
+              <p class="audio__text">
+                Custom Spatial Audio with dynamic head tracking provides a surround sound experience worthy of a movie
+                theater.
+              </p>
+              <p class="audio__text">
+                Through built-in gyroscopes and accelerometers, AirPods Max and your iPhone, iPad, Mac or Apple TV
+                detect
+                the slightest head movements and keep the sound steady on your device.
+              </p>
+              <p class="audio__text">
+                And with Apple Music, custom Spatial Audio with dynamic head tracking creates a unique three-dimensional
+                listening experience.
+              </p>
+              <button class="audio__btn btn">
+                buy
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="get-up">
+        <button class="get-up__btn">UP</button>
+      </div>
+
+    </main>
+    <footer class="footer" id="contacts">
+        <div class="container">
+            <p class="footer__text">
+                Find a retailer near you
+            </p>
+            <p class="footer__text">
+                Or call <a href="tel:800 207 758">800 207 758</a>
+            </p>
+            <img src="images/white-logo.svg" alt="">
+            <div class="footer__bottom">
+                <p class="footer__bottom-text">Copyright © 2023 Apple Inc.</p>
+                <p class="footer__bottom-text">All rights reserved.</p>
+                <p class="footer__bottom-text">
+                    <a href="#">
+                        Legal Notices
+                    </a>
+                </p>
+                <p class="footer__bottom-text">
+                    <a href="#">
+                        Site Map
+                    </a>
+                </p>
+                <p class="footer__bottom-text">
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+  </div>
+
+  <script id="script" src="https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

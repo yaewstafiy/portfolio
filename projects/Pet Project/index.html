@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Project</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header></header>
+    <main class="main">
+
+      <div class="different-tasks">
+
+        <section class="task">
+          <div class="container">
+            <div class="task__inner">
+              <h1 class="task__title title">Задачник</h1>
+
+              <form class="task__box">
+                <input class="task__input" type="text" id="task-input" placeholder="Добавить задачу...">
+                <button class="task__button" id="add-task">Добавить</button>
+              </form>
+
+              <div class="task__counter"></div>
+              <ul class="task__list">
+                <!-- сюда будут добавляться новые задачи -->
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="counter">
+          <div class="container">
+            <h1 class="counter__title title">Счётчик</h1>
+            <div class="counter__inner">
+              <button class="counter__decrease">-</button>
+              <div class="counter__result">0</div>
+              <button class="counter__increase">+</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="calc">
+          <h1 class="calc__title title">Калькулятор</h1>
+          <div class="calc__screen">
+            <p>0</p>
+          </div>
+          <div class="calc__buttons">
+            <div class="calc__button button--ac bg-black">AC</div>
+            <div class="calc__button button--plus-minus bg-black">+/-</div>
+            <div class="calc__button button--percent bg-black">%</div>
+            <div class="calc__button button--divide bg-orange">/</div>
+
+            <div class="calc__button button--seven">7</div>
+            <div class="calc__button button--eight">8</div>
+            <div class="calc__button button--nine">9</div>
+            <div class="calc__button button--multiply bg-orange">X</div>
+
+            <div class="calc__button button--four">4</div>
+            <div class="calc__button button--five">5</div>
+            <div class="calc__button button--six">6</div>
+            <div class="calc__button button--minus bg-orange">-</div>
+
+            <div class="calc__button button--one">1</div>
+            <div class="calc__button button--two">2</div>
+            <div class="calc__button button--three">3</div>
+            <div class="calc__button button--plus bg-orange">+</div>
+
+            <div class="calc__button button--zero">0</div>
+            <div class="calc__button button--dot">.</div>
+            <div class="calc__button button--equal bg-orange">=</div>
+
+          </div>
+        </section>
+
+        <section class="password">
+          <div class="container">
+
+            <h1 class="password__title title">Генератор паролей</h1>
+            <form class="password__form">
+              <label for="passwordLength" class="password__label">Длина пароля:</label>
+              <input type="number" class="password__input" min="4" max="100" value="12" required>
+              <br>
+              <label for="includeLowercase" class="password__label">Включить строчные буквы (a-z):</label>
+              <input type="checkbox" class="password__checkbox" checked>
+              <br>
+              <label for="includeUppercase" class="password__label">Включить заглавные буквы (A-Z):</label>
+              <input type="checkbox" class="password__checkbox" checked>
+              <br>
+              <label for="includeNumbers" class="password__label">Включить цифры (0-9):</label>
+              <input type="checkbox" class="password__checkbox" checked>
+              <br>
+              <label for="includeSpecialCharacters" class="password__label">Включить специальные символы
+                (!@#$%^&*):</label>
+              <input type="checkbox" class="password__checkbox">
+              <br>
+              <button type="submit" class="password__button">Сгенерировать пароль</button>
+            </form>
+            <h2 class="password__subtitle">Ваш пароль:</h2>
+            <div class="password__output"></div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+    <footer></footer>
+  </div>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
